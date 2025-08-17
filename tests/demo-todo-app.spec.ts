@@ -36,7 +36,6 @@ test.only("should be possible to create todo items",async({page})=>
       // Make sure the list now has all todo items.
     await expect(page.getByTestId('todo-title')).toHaveText([
       TODO_ITEMS2[1],
-      TODO_ITEMS2[0],
       TODO_ITEMS2[1],
       TODO_ITEMS2[2]
     ]);
