@@ -30,7 +30,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     browserName: 'chromium',
-    headless: false, // GUI
+    headless: true, // GUI
     launchOptions: {
       slowMo: 500, // spowolnienie 500ms między akcjami
     },
